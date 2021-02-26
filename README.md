@@ -2,6 +2,8 @@
 
 authentication should happen in a different file:
 
+Ez egy reddit és discord bot lesz, ami átjárást biztosít a két program között. Megosztva egymással a mind a kettő tartalmát.
+
 ```
 #authentication.py
 
@@ -21,7 +23,5 @@ def discord_authentication():
 ```
 
 Added a few functions into cogs instead of using the main line:
-
-```
 
 ```
