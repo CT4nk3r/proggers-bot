@@ -1,3 +1,4 @@
+import asyncio
 import discord
 import os
 
@@ -16,6 +17,8 @@ bot = commands.Bot(command_prefix='!')
 
 @bot.event
 async def on_ready():
+    # channel = bot.get_channel(816668887407132715)
+    # await channel.send('Status changed to online')
     print('Discord authentication as: {0.user}'.format(bot))
     activity = discord.Game(name='https://github.com/CT4nk3r/proggers-bot')
     await bot.change_presence(activity=activity)
