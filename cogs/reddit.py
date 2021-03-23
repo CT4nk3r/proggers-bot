@@ -22,7 +22,7 @@ class Reddit(commands.Cog):
         self.path = f'downloaded/'
     
     @commands.command(name='meme', help='shows you the latest meme on r/memes')
-    async def meme(ctx):
+    async def meme(self, ctx):
         new_meme = subreddit.new(limit=1)
         for meme in new_meme:
             print(meme)
