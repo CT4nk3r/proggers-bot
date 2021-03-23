@@ -1,4 +1,4 @@
-# proggers-bot
+# Proggers-bot
 
 ## Table of contents
 * [General info](#general-info)
@@ -19,9 +19,10 @@ Project is created with:
 * Reddit
 
 ## Setup
-To run this project, install a running enviroment for python, download praw and 
+To run this project, install a running enviroment for python, download praw and discord.py 
+First of all, we have to install Python from [here](https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe)
 
-authentication should happen in a different file:
+Then make an authentication file that should look something like this:
 ```
 #authentication.py
 
