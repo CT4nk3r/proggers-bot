@@ -20,7 +20,11 @@ Project is created with:
 
 ## Setup
 To run this project, install a running enviroment for python, download praw and discord.py 
-First of all, we have to install Python from [here](https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe)
+First of all, we have to install Python from [here](https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe).
+Now we have to use python to download the modules that we need, mainly we are using discordpy and praw. 
+Open up the python terminal and type in to download discordpy: `pip install -U discord.py`
+Then we are going to download praw with this: `pip install praw`
+
 
 Then make an authentication file that should look something like this:
 ```
