@@ -33,12 +33,20 @@ async def logout():
     await bot.logout()
 
 @bot.command()
+@commands.has_role("Developers")
 async def load(ctx, extension):
-    bot.load_extension(f'cogs.{extension}')
+    try:
+        bot.load_extension(f'cogs.{extension}')
+    except commands.MissingRole:
+       await ctx.send('You do not have the correct role for this command.')
 
 @bot.command()
+@commands.has_role("Developers")
 async def unload(ctx, extension):
-    bot.unload_extension(f'cogs.{extension}')
+    try:
+        bot.unload_extension(f'cogs.{extension}')
+    except commands.MissingRole:
+       await ctx.send('You do not have the correct role for this command.')
 
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
