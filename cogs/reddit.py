@@ -17,9 +17,5 @@ class Reddit(commands.Cog):
             print(meme.url)
             await ctx.send(meme.url)
 
-    # @commands.command(name='download', help='downloads the best pictures from the chosen subreddit')
-    # async def download(self, ctx, sub : str, limit : int, order : str):
-        
-
 def setup(client):
     client.add_cog(Reddit(client))
