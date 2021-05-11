@@ -51,12 +51,12 @@ class YTDLSource(discord.PCMVolumeTransformer):
 ytdl = youtube_dl.YoutubeDL(ytdl_format_options)
 
 
-class Music(commands.cog):
+class Music(commands.Cog):
 
     def __init__(self, client):
         self.client = client
 
-    @commands.command(pass_context=True, name='join' , help = 'The bot joins to your voice channel.')
+    @commands.command(pass_context=True, name='join')
     async def join(self,ctx):
         channel= ctx.message.author.voice.channel
         voice = await channel.connect()  
@@ -65,7 +65,7 @@ class Music(commands.cog):
     async def leave(self,ctx):
         await ctx.voice_client.disconnect()
 
-    @commands.command(name='queue', help = 'This command adds a song to the queue')
+    @commands.command(name='add', help = 'This command adds a song to the queue')
     async def add(self,ctx, url):
         global queue
 
@@ -83,7 +83,7 @@ class Music(commands.cog):
         except:
             await ctx.send('Your queue is either **empty** or the index is **out of range**')
 
-    @bot.command(name='view', help='This command shows the queue')
+    @commands.command(name='view', help='This command shows the queue')
     async def view(self,ctx):
         await ctx.send(f'Your queue is now `{queue}!`')
 
@@ -115,7 +115,7 @@ class Music(commands.cog):
 
         voice_channel.resume()  
 
-    @bot.command(name='stop', help='This command stops the song!')
+    @commands.command(name='stop', help='This command stops the song!')
     async def stop(self,ctx):
         server = ctx.message.guild
         voice_channel = server.voice_client
