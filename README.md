@@ -1,5 +1,9 @@
 # Proggers-bot
-<p align="center">![logo](logo.png)</p>
+<p align="center">
+    
+    ![logo](logo.png)
+
+</p>
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
