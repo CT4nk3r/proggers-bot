@@ -1,8 +1,8 @@
-# Proggers-bot    
-![Proggers Logo](logo.png?raw=true "Optional Title")
+# Proggers-bot   
 
-<div style="text-align:center"><img src="logo.png" /></div>
-
+<p align="center">
+  <img src="http://some_place.com/logo.png" />
+</p>
 
 ## Table of contents
 * [General info](#general-info)
