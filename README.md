@@ -1,5 +1,9 @@
 # Proggers-bot    
 ![Proggers Logo](logo.png?raw=true "Optional Title")
+
+<div style="text-align:center"><img src="logo.png" /></div>
+
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
