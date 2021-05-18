@@ -1,8 +1,5 @@
-# Proggers-bot
-    https://github.com/CT4nk3r/proggers-bot/blob/main/logo.png
-    
-![Alt Image text](/relative/path/to/logo.png?raw=true "Optional Title")
-
+# Proggers-bot    
+![Proggers Logo](logo.png?raw=true "Optional Title")
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
