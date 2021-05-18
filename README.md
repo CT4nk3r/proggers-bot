@@ -1,7 +1,7 @@
 # Proggers-bot   
 
 <p align="center">
-  <img src="http://some_place.com/logo.png" />
+  <img src="logo.png" />
 </p>
 
 ## Table of contents
