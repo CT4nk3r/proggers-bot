@@ -1,7 +1,7 @@
 # Proggers-bot
 <p align="center">
     
-    ![logo](logo.png)
+    <img src="logo.png">
 
 </p>
 ## Table of contents
