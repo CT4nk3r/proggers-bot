@@ -1,6 +1,5 @@
 # Proggers-bot
     
-    <img src="logo.png">
 
 ## Table of contents
 * [General info](#general-info)
