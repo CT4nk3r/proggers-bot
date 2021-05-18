@@ -6,6 +6,8 @@ from discord.ext import commands
 
 from authentication import reddit_authentication
 from authentication import discord_authentication
+from yahoofinancials import YahooFinancials
+import time
 
 print("Authenticating discord bot...")
 TOKEN = discord_authentication()
@@ -51,5 +53,40 @@ async def unload(ctx, extension):
 for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         bot.load_extension(f'cogs.{filename[:-3]}')
+
+"""
+async def timetravel():
+    await bot.wait_until_ready()
+    await asyncio.sleep(1.5)
+    channel = bot.get_channel(844237645344669736)
+    ticker = 'GME'
+    ticker2 = 'AAPL'
+    ticker3 = 'AMC'
+    ticker4 = 'AMD'
+    ticker5 = 'INTC'
+    while not bot.is_closed():
+        my_stock = YahooFinancials(ticker)
+        price = my_stock.get_current_price()
+        await channel.send( f"{ticker}  right now is on : ")
+        await channel.send (price)
+        my_stock2 = YahooFinancials(ticker2)
+        price2 = my_stock2.get_current_price()
+        await channel.send(f"{ticker2} right now is on : ")
+        await channel.send (price2)
+        my_stock3 = YahooFinancials(ticker3)
+        price3 = my_stock3.get_current_price()
+        await channel.send( f"{ticker3} right now is on : ")
+        await channel.send (price3)
+        my_stock4 = YahooFinancials(ticker4)
+        price4 = my_stock4.get_current_price()
+        await channel.send(f"{ticker4} right now is on : ")
+        await channel.send (price4)
+        my_stock5 = YahooFinancials(ticker5)
+        price5 = my_stock5.get_current_price()
+        await channel.send(f"{ticker5} right now is on : ")
+        await channel.send (price5)
+        await asyncio.sleep(3)
+
+bot.loop.create_task(timetravel())"""
 
 bot.run(TOKEN)
